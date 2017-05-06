@@ -1,0 +1,25 @@
+[2017-04-21 00:14:01] __rvm_set_executable
+__rvm_set_executable () 
+{ 
+    for __file in "$@";
+    do
+        [[ -x "${__file}" ]] || chmod +x "${__file}";
+    done
+}
+current path: /home/shalini/.rvm/src/ruby-2.4.0
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/shalini/.rvm/bin
+command(8): __rvm_set_executable /home/shalini/.rvm/rubies/ruby-2.4.0/bin/erb /home/shalini/.rvm/rubies/ruby-2.4.0/bin/gem /home/shalini/.rvm/rubies/ruby-2.4.0/bin/irb /home/shalini/.rvm/rubies/ruby-2.4.0/bin/rake /home/shalini/.rvm/rubies/ruby-2.4.0/bin/rdoc /home/shalini/.rvm/rubies/ruby-2.4.0/bin/ri /home/shalini/.rvm/rubies/ruby-2.4.0/bin/ruby
+++ for __file in '"$@"'
+++ [[ -x /home/shalini/.rvm/rubies/ruby-2.4.0/bin/erb ]]
+++ for __file in '"$@"'
+++ [[ -x /home/shalini/.rvm/rubies/ruby-2.4.0/bin/gem ]]
+++ for __file in '"$@"'
+++ [[ -x /home/shalini/.rvm/rubies/ruby-2.4.0/bin/irb ]]
+++ for __file in '"$@"'
+++ [[ -x /home/shalini/.rvm/rubies/ruby-2.4.0/bin/rake ]]
+++ for __file in '"$@"'
+++ [[ -x /home/shalini/.rvm/rubies/ruby-2.4.0/bin/rdoc ]]
+++ for __file in '"$@"'
+++ [[ -x /home/shalini/.rvm/rubies/ruby-2.4.0/bin/ri ]]
+++ for __file in '"$@"'
+++ [[ -x /home/shalini/.rvm/rubies/ruby-2.4.0/bin/ruby ]]

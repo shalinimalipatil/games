@@ -1,0 +1,65 @@
+[2017-04-20 23:54:20] __rvm_package_extract
+__rvm_package_extract () 
+{ 
+    rvm_debug __rvm_package_extract:$#: "$@";
+    \typeset __tempdir __path __file __return;
+    __return=0;
+    __tempdir="$( TMPDIR="${rvm_tmp_path}" mktemp -d -t rvm-tmp.XXXXXXXXX )";
+    __rvm_package_extract_run "$1" "$__tempdir" || __return=$?;
+    if (( __return == 0 )); then
+        for __path in "$__tempdir"/*;
+        do
+            __file="${__path##*/}";
+            if [[ -n "${__file}" && -e "$2/${__file}" ]]; then
+                \command \rm -rf "$2/${__file}" || __return=$?;
+            fi;
+            \command \mv -f "${__path}" "$2/" || __return=$?;
+        done;
+    fi;
+    if [[ -n "$__tempdir" ]]; then
+        \command \rm -rf "$__tempdir";
+    fi;
+    return $__return
+}
+current path: /home/shalini/.rvm/src
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/shalini/.rvm/bin
+command(3): __rvm_package_extract /home/shalini/.rvm/archives/ruby-2.4.0.tar.bz2 /home/shalini/.rvm/tmp/rvm_src_2720
+++ rvm_debug __rvm_package_extract:2: /home/shalini/.rvm/archives/ruby-2.4.0.tar.bz2 /home/shalini/.rvm/tmp/rvm_src_2720
+++ ((  0  ))
+++ return 0
+++ typeset __tempdir __path __file __return
+++ __return=0
++++ TMPDIR=/home/shalini/.rvm/tmp
++++ mktemp -d -t rvm-tmp.XXXXXXXXX
+++ __tempdir=/home/shalini/.rvm/tmp/rvm-tmp.c1i3M91i3
+++ __rvm_package_extract_run /home/shalini/.rvm/archives/ruby-2.4.0.tar.bz2 /home/shalini/.rvm/tmp/rvm-tmp.c1i3M91i3
+++ [[    != *\ \-\-\n\o\-\s\a\m\e\-\o\w\n\e\r\ * ]]
+++ __rvm_grep -- --no-same-owner
+++ __rvm_tar --help
+++ GREP_OPTIONS=
+++ command grep -- --no-same-owner
+++ grep -- --no-same-owner
+++ rvm_tar_options=--no-same-owner
+++ [[ -d /home/shalini/.rvm/tmp/rvm-tmp.c1i3M91i3 ]]
+++ case "$1" in
+++ [[ -n '' ]]
+++ __rvm_tar xjf /home/shalini/.rvm/archives/ruby-2.4.0.tar.bz2 -C /home/shalini/.rvm/tmp/rvm-tmp.c1i3M91i3 --no-same-owner
+++ tar xjf /home/shalini/.rvm/archives/ruby-2.4.0.tar.bz2 -C /home/shalini/.rvm/tmp/rvm-tmp.c1i3M91i3 --no-same-owner
+++ __rvm_fix_group_permissions /home/shalini/.rvm/tmp/rvm-tmp.c1i3M91i3/ruby-2.4.0
+++ __rvm_grep g=rw
+++ umask -S
+++ GREP_OPTIONS=
+++ command grep g=rw
+++ grep g=rw
+++ chmod -R g+rwX /home/shalini/.rvm/tmp/rvm-tmp.c1i3M91i3/ruby-2.4.0
+++ ((  __return == 0  ))
+++ for __path in '"$__tempdir"/*'
+++ __file=ruby-2.4.0
+++ [[ -n ruby-2.4.0 ]]
+++ [[ -e /home/shalini/.rvm/tmp/rvm_src_2720/ruby-2.4.0 ]]
+++ command mv -f /home/shalini/.rvm/tmp/rvm-tmp.c1i3M91i3/ruby-2.4.0 /home/shalini/.rvm/tmp/rvm_src_2720/
+++ mv -f /home/shalini/.rvm/tmp/rvm-tmp.c1i3M91i3/ruby-2.4.0 /home/shalini/.rvm/tmp/rvm_src_2720/
+++ [[ -n /home/shalini/.rvm/tmp/rvm-tmp.c1i3M91i3 ]]
+++ command rm -rf /home/shalini/.rvm/tmp/rvm-tmp.c1i3M91i3
+++ rm -rf /home/shalini/.rvm/tmp/rvm-tmp.c1i3M91i3
+++ return 0

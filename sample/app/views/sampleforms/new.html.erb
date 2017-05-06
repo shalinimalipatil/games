@@ -1,0 +1,17 @@
+<%= form_for @sampleform do |f|%>
+<p>
+<%= f.label :name %>
+<%= f.text_field :name %>
+</p>
+<p>
+<%= f.label :gender%>
+<%= f.radio_button :gender,'male',
+:checked=>true%>male
+<%= f.radio_button :gender,'female'%>female
+</p>
+<p>
+<%= f.label :country %>
+<%= f.text_field :country %>
+</p>
+<%= f.submit "submit"%>
+<% end %>

@@ -1,0 +1,2 @@
+class SampleformsController < ApplicationController
+end

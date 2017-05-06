@@ -1,0 +1,46 @@
+[2017-04-21 00:14:45] alias_create_execute
+alias_create_execute () 
+{ 
+    for _path in "$rvm_rubies_path" "$rvm_environments_path" "$rvm_wrappers_path";
+    do
+        if [[ -L "$_path/$alias_name" ]]; then
+            \command \rm -fv "$_path/$alias_name" || return $?;
+        fi;
+        \command \ln -fs "$_path/$rvm_ruby_string" "$_path/$alias_name" || return $?;
+    done;
+    __rvm_db_ "$rvm_path/config/alias" "$alias_name" "$rvm_ruby_string"
+}
+current path: /home/shalini
+GEM_HOME=/home/shalini/.rvm/gems/ruby-2.4.0
+PATH=/home/shalini/.rvm/gems/ruby-2.4.0/bin:/home/shalini/.rvm/gems/ruby-2.4.0@global/bin:/home/shalini/.rvm/rubies/ruby-2.4.0/bin:/home/shalini/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+GEM_PATH=/home/shalini/.rvm/gems/ruby-2.4.0:/home/shalini/.rvm/gems/ruby-2.4.0@global
+command(1): alias_create_execute
++ for _path in '"$rvm_rubies_path"' '"$rvm_environments_path"' '"$rvm_wrappers_path"'
++ [[ -L /home/shalini/.rvm/rubies/default ]]
++ command ln -fs /home/shalini/.rvm/rubies/ruby-2.4.0 /home/shalini/.rvm/rubies/default
++ ln -fs /home/shalini/.rvm/rubies/ruby-2.4.0 /home/shalini/.rvm/rubies/default
++ for _path in '"$rvm_rubies_path"' '"$rvm_environments_path"' '"$rvm_wrappers_path"'
++ [[ -L /home/shalini/.rvm/environments/default ]]
++ command ln -fs /home/shalini/.rvm/environments/ruby-2.4.0 /home/shalini/.rvm/environments/default
++ ln -fs /home/shalini/.rvm/environments/ruby-2.4.0 /home/shalini/.rvm/environments/default
++ for _path in '"$rvm_rubies_path"' '"$rvm_environments_path"' '"$rvm_wrappers_path"'
++ [[ -L /home/shalini/.rvm/wrappers/default ]]
++ command ln -fs /home/shalini/.rvm/wrappers/ruby-2.4.0 /home/shalini/.rvm/wrappers/default
++ ln -fs /home/shalini/.rvm/wrappers/ruby-2.4.0 /home/shalini/.rvm/wrappers/default
++ __rvm_db_ /home/shalini/.rvm/config/alias default ruby-2.4.0
++ typeset __db __key __value
++ __db=/home/shalini/.rvm/config/alias
++ __key=default
++ shift 2
++ __value=ruby-2.4.0
++ case "${__value}" in
++ __rvm_db_add /home/shalini/.rvm/config/alias default ruby-2.4.0
++ typeset __dir=/home/shalini/.rvm/config
++ [[ -f /home/shalini/.rvm/config/alias ]]
++ __rvm_db_remove /home/shalini/.rvm/config/alias default
++ [[ -f /home/shalini/.rvm/config/alias ]]
++ __rvm_sed -e '\#^default=# d' -e '/^$/d' /home/shalini/.rvm/config/alias
++ sed -e '\#^default=# d' -e '/^$/d' /home/shalini/.rvm/config/alias
++ command mv -f /home/shalini/.rvm/config/alias.new /home/shalini/.rvm/config/alias
++ mv -f /home/shalini/.rvm/config/alias.new /home/shalini/.rvm/config/alias
++ printf '%b=%b\n' default ruby-2.4.0

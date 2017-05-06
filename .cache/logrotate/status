@@ -1,0 +1,26 @@
+logrotate state -- version 2
+"/home/shalini/.cache/upstart/im-config.log" 2017-5-5-23:2:46
+"/home/shalini/.cache/upstart/unity-settings-daemon.log" 2017-5-5-23:2:46
+"/home/shalini/.cache/upstart/logrotate.log" 2017-5-4-20:22:8
+"/home/shalini/.cache/upstart/hud.log" 2017-5-3-23:41:12
+"/home/shalini/.cache/upstart/at-spi2-registryd.log" 2017-5-5-23:2:46
+"/home/shalini/.cache/upstart/update-notifier-crash-_var_crash_linux-image-4.2.0-27-generic.151287.crash.log" 2017-5-3-23:41:12
+"/home/shalini/.cache/upstart/gnome-keyring-gpg.log" 2017-5-5-23:2:46
+"/home/shalini/.cache/upstart/indicator-bluetooth.log" 2017-5-5-21:25:55
+"/home/shalini/.cache/upstart/indicator-session.log" 2017-5-5-8:47:21
+"/home/shalini/.cache/upstart/unity-panel-service.log" 2017-5-5-23:2:46
+"/home/shalini/.cache/upstart/indicator-application.log" 2017-4-25-21:57:9
+"/home/shalini/.cache/upstart/ssh-agent.log" 2017-5-5-23:2:46
+"/home/shalini/.cache/upstart/indicator-power.log" 2017-5-5-23:2:46
+"/home/shalini/.cache/upstart/update-notifier-crash-_var_crash_linux-image-4.2.0-27-generic.115163.crash.log" 2017-5-5-23:0:0
+"/home/shalini/.cache/upstart/indicator-printers.log" 2017-4-21-0:35:42
+"/home/shalini/.cache/upstart/gnome-keyring-ssh.log" 2017-5-5-23:2:46
+"/home/shalini/.cache/upstart/indicator-sound.log" 2017-5-5-23:2:46
+"/home/shalini/.cache/upstart/unity7.log" 2017-5-5-23:2:46
+"/home/shalini/.cache/upstart/update-notifier-crash-_var_crash_linux-image-4.2.0-27-generic.150678.crash.log" 2017-5-3-23:41:12
+"/home/shalini/.cache/upstart/update-notifier-release.log" 2017-5-5-23:2:46
+"/home/shalini/.cache/upstart/dbus.log" 2017-5-5-23:2:46
+"/home/shalini/.cache/upstart/gnome-session-Unity.log" 2017-5-5-23:2:46
+"/home/shalini/.cache/upstart/indicator-datetime.log" 2017-5-4-2:21:37
+"/home/shalini/.cache/upstart/update-notifier-crash-_var_crash__usr_lib_i386-linux-gnu_indicator-application_indicator-application-service.1000.crash.log" 2017-5-3-23:41:12
+"/home/shalini/.cache/upstart/window-stack-bridge.log" 2017-5-5-23:2:46

@@ -1,0 +1,19 @@
+<h1>Shalinis#index</h1>
+<table>
+<tr>
+<th>name</th>
+<th>email</th>
+<th>password</th>
+</tr>
+
+<% @shalinis.each do |f| %>
+<tr>
+<td><%= s.name %></td>
+<td><%= s.email %></td>
+<td><%= s.password %></td>
+<td><%= link_to 'show', new_shalinis_path(f) %></td>
+<td><%= link_to 'edit',  new_shalinis_path(f) %></td>
+</tr>
+<% end %>
+</table>
+<%= link_to 'New Shalini', new_shalini_path %>         

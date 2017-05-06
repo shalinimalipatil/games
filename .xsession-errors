@@ -1,0 +1,4 @@
+Script for ibus started at run_im.
+Script for auto started at run_im.
+Script for default started at run_im.
+init: update-notifier-crash (/var/crash/linux-image-4.2.0-27-generic.115163.crash) main process (2248) terminated with status 1
