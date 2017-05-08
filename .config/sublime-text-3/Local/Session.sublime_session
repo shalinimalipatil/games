@@ -1,13 +1,14 @@
 {
 	"folder_history":
 	[
+		"/home/shalini/user",
 		"/home/shalini/sample",
 		"/home/shalini/app",
 		"/home/shalini/gaming",
 		"/home/shalini"
 	],
 	"last_version": 3126,
-	"last_window_id": 17,
+	"last_window_id": 18,
 	"log_indexing": false,
 	"settings":
 	{
@@ -190,8 +191,7 @@
 					"file": "/home/shalini/sample/app/controllers/sampleforms_controller.rb",
 					"settings":
 					{
-						"buffer_size": 412,
-						"encoding": "UTF-8",
+						"buffer_size": 0,
 						"line_ending": "Unix"
 					}
 				},
@@ -225,8 +225,7 @@
 					"file": "/home/shalini/sample/config/routes.rb",
 					"settings":
 					{
-						"buffer_size": 195,
-						"encoding": "UTF-8",
+						"buffer_size": 0,
 						"line_ending": "Unix"
 					}
 				}
@@ -265,8 +264,7 @@
 			[
 				"/home/shalini/sample",
 				"/home/shalini/sample/app",
-				"/home/shalini/sample/app/views",
-				"/home/shalini/sample/app/views/sampleforms"
+				"/home/shalini/sample/app/views"
 			],
 			"file_history":
 			[
@@ -322,15 +320,15 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 412,
+								"buffer_size": 0,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										411,
-										411
+										0,
+										0
 									]
 								],
 								"settings":
@@ -434,15 +432,15 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 195,
+								"buffer_size": 0,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										87,
-										87
+										0,
+										0
 									]
 								],
 								"settings":

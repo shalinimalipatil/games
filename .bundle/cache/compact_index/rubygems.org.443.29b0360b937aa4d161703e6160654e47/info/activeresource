@@ -149,3 +149,4 @@
 3.2.22.3 activemodel:= 3.2.22.3,activesupport:= 3.2.22.3|checksum:94e5dc7c2c09b9c2f73e223d8e56a9227268a65e3eee0987852c38a325b46902,ruby:>= 1.8.7
 3.2.22.4 activemodel:= 3.2.22.4,activesupport:= 3.2.22.4|checksum:d1f0c6037e5041d2be8f4a4feb055051c015a7e149c4290843a641e0b43ba9f5,ruby:>= 1.8.7
 3.2.22.5 activemodel:= 3.2.22.5,activesupport:= 3.2.22.5|checksum:d5a23e00a099aed22693b042843186c46fa3dde2e6cf0cbd6756b8adfb36b16a,ruby:>= 1.8.7
+5.0.0 activemodel:< 6&>= 5.0,activemodel-serializers-xml:~> 1.0,activesupport:< 6&>= 5.0|checksum:e8c73eca93836e9efc3045b49aaaa0a822e28b43f1ba89465bd163e0fcec2817,ruby:>= 2.2.2

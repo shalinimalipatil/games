@@ -1,4 +1,10 @@
 
-(unity-panel-service:2280): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'wm != NULL' failed
+** (unity-panel-service:2106): WARNING **: Failed to fetch xid: Timeout was reached
 
-(unity-panel-service:2280): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'wm != NULL' failed
+** (unity-panel-service:2106): WARNING **: Failed to fetch type: Timeout was reached
+
+** (unity-panel-service:2106): WARNING **: Failed to fetch type: Timeout was reached
+
+** (unity-panel-service:2106): WARNING **: Failed to fetch property `_GTK_WINDOW_OBJECT_PATH': Timeout was reached
+
+** (unity-panel-service:2106): WARNING **: Failed to fetch property `_UNITY_OBJECT_PATH': Timeout was reached
